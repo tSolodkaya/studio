@@ -1,0 +1,57 @@
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $modal-backdrop-color;
+  visibility: visible;
+  transition: opacity 250ms $transition-function;
+  overflow-y: scroll;
+}
+
+.modal {
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+    height: 609px;
+  }
+
+  width: 535px;
+  height: 581px;
+  padding: 38px 40px;
+  background-color: $white-text-color;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms $transition-function;
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.3);
+  }
+}
+
+.modal__btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  border: 1px solid $close-btn-border-color;
+  border-radius: 50%;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal__icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms $transition-function;
+
+  .modal__btn:hover & {
+    fill: #2196f3;
+  }
+}
