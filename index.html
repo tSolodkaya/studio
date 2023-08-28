@@ -110,7 +110,7 @@
           </button>
         </div>
       </section>
-      <section class="container features">
+      <section class="features container">
         <ul class="features__list">
           <li class="features__item">
             <div class="thumb">
@@ -165,17 +165,32 @@
           </li>
         </ul>
       </section>
-      <section class="works">
+      <section class="works container">
         <h2 class="works__title">What we do</h2>
         <ul class="works__list">
           <li class="works__item">
             <a href="#">
               <div class="works__thumb">
-                <img
-                  src="./images/studio/type_on_keyboard.jpg"
-                  alt="Developer type a code on keyboard"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desc/desc-370.webp    1x,
+                      ./images/desc/desc@2x-740.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desc/desc-370.jpg    1x,
+                      ./images/desc/desc@2x-740.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/desc/desc-370.jpg"
+                    alt="Developer type a code on keyboard"
+                  />
+                </picture>
                 <div class="works__descr">
                   <h3>DESKTOP APPS</h3>
                 </div>
@@ -185,11 +200,27 @@
           <li class="works__item">
             <a href="#">
               <div class="works__thumb">
-                <img
-                  src="./images/studio/type_on_mobile_phone.jpg"
-                  alt="Developer chose a disign of mobile app"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desc/mob-370.webp    1x,
+                      ./images/desc/mob@2x-740.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desc/mob-370.jpg    1x,
+                      ./images/desc/mob@2x-740.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/desc/mob-370.jpg"
+                    alt="Developer chose a disign of mobile app"
+                    width="370"
+                  />
+                </picture>
                 <div class="works__descr">
                   <h3>Mobile APPS</h3>
                 </div>
@@ -199,11 +230,28 @@
           <li class="works__item">
             <a href="#">
               <div class="works__thumb">
-                <img
-                  src="./images/studio/graphic_on_laptop.jpg"
-                  alt=" Developer show the graphics on tablet"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desc/design-370.webp    1x,
+                      ./images/desc/design@2x-740.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desc/design-370.jpg    1x,
+                      ./images/desc/design@2x-740.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/desc/design-370.jpg"
+                    alt=" Developer show the graphics on tablet"
+                    width="370"
+                  />
+                </picture>
+
                 <div class="works__descr">
                   <h3>DESIGN SOLUTIONS</h3>
                 </div>
@@ -213,205 +261,427 @@
         </ul>
       </section>
 
-      <section class="container team">
-        <h2 class="team__title">Our Team</h2>
-        <ul class="team__list">
-          <li class="team__item">
-            <img
-              class="team__photo"
-              src="./images/studio/christopher.jpg"
-              alt="Christopher Walker"
-              width="270"
-            />
-            <h3 class="team__name">Christopher Walker</h3>
-            <p class="team__ocupation">Product Designer</p>
-            <ul class="social-list">
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="instagram">
-                  <div class="social-thumb">
-                    <svg class="social-list__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#instagram" />
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="twitter">
-                  <div class="social-thumb">
-                    <svg class="social-list__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#twitter" />
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="facebook">
-                  <div class="social-thumb">
-                    <svg class="social-list__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#facebook" />
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="linkedin">
-                  <div class="social-thumb">
-                    <svg class="social-list__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#linkedin" />
-                    </svg>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </li>
+      <section class="team">
+        <div class="container">
+          <h2 class="team__title">Our Team</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <div class="team__photo">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desc/chris-270.webp    1x,
+                      ./images/desc/chris@2x-540.webp 2x
+                    "
+                    media="(min-width: 1140px)"
+                    sizes="(min-width: 1140px) 1140px, 25vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desc/chris-270.jpg    1x,
+                      ./images/desc/chris@2x-540.jpg 2x
+                    "
+                    media="(min-width: 1140px)"
+                    sizes="(min-width: 1140px) 1140px, 25vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/chris-354.webp    1x,
+                      ./images/tablet/chris@2x-708.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px, 50vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/chris-354.jpg    1x,
+                      ./images/tablet/chris@2x-708.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px, 50vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/christopher.webp        1x,
+                      ./images/mobile/christopher@2x-900.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 480px) 480px, 100vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/christopher.jpg        1x,
+                      ./images/mobile/christopher@2x-900.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 480px) 480px, 100vw"
+                    type="image/jpeg"
+                  />
 
-          <li class="team__item">
-            <img
-              class="team__photo"
-              src="./images/studio/kylie.jpg"
-              alt="Kylie Evans"
-              width="270"
-            />
-            <h3 class="team__name">Kylie Evans</h3>
-            <p class="team__occupation">Frontend Developer</p>
-            <ul class="social-list">
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="instagram">
-                  <div class="social-thumb">
-                    <svg class="social-list__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#instagram" />
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="twitter">
-                  <div class="social-thumb">
-                    <svg class="social-list__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#twitter" />
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="facebook">
-                  <div class="social-thumb">
-                    <svg class="social-list__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#facebook" />
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="linkedin">
-                  <div class="social-thumb">
-                    <svg class="social-list__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#linkedin" />
-                    </svg>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </li>
+                  <img
+                    src="./images/mobile/christopher.jpg"
+                    alt="Christopher Walker"
+                  />
+                </picture>
+              </div>
 
-          <li class="team__item">
-            <img
-              class="team__photo"
-              src="./images/studio/rayn.jpg"
-              alt="Ryan Harris"
-              width="270"
-            />
-            <h3 class="team__name">Ryan Harris</h3>
-            <p class="team__occupation">Marketing</p>
-            <ul class="social-list">
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="instagram">
-                  <div class="social-thumb">
-                    <svg class="social-list__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#instagram" />
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="twitter">
-                  <div class="social-thumb">
-                    <svg class="social-list__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#twitter" />
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="facebook">
-                  <div class="social-thumb">
-                    <svg class="social-list__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#facebook" />
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="linkedin">
-                  <div class="social-thumb">
-                    <svg class="social-list__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#linkedin" />
-                    </svg>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </li>
+              <h3 class="team__name">Christopher Walker</h3>
+              <p class="team__ocupation">Product Designer</p>
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="instagram">
+                    <div class="social-thumb">
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#instagram" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="twitter">
+                    <div class="social-thumb">
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#twitter" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="facebook">
+                    <div class="social-thumb">
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#facebook" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="linkedin">
+                    <div class="social-thumb">
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#linkedin" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-          <li class="team__item">
-            <img
-              class="team__photo"
-              src="./images/studio/tyler.jpg"
-              alt="Tyler Moore"
-              width="270"
-            />
-            <h3 class="team__name">Tyler Moore</h3>
-            <p class="team__occupation">UI Designer</p>
-            <ul class="social-list">
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="instagram">
-                  <div class="social-thumb">
-                    <svg class="social-list__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#instagram" />
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="twitter">
-                  <div class="social-thumb">
-                    <svg class="social-list__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#twitter" />
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="facebook">
-                  <div class="social-thumb">
-                    <svg class="social-list__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#facebook" />
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" aria-label="linkedin">
-                  <div class="social-thumb">
-                    <svg class="social-list__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#linkedin" />
-                    </svg>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+            <li class="team__item">
+              <div class="team__photo">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desc/kylie-270.webp    1x,
+                      ./images/desc/kylie@2x-540.webp 2x
+                    "
+                    media="(min-width: 1140px)"
+                    sizes="(min-width: 1140px) 1140px, 25vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desc/kylie-270.jpg    1x,
+                      ./images/desc/kylie@2x-540.jpg 2x
+                    "
+                    media="(min-width: 1140px)"
+                    sizes="(min-width: 1140px) 1140px, 25vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/kylie-354.webp    1x,
+                      ./images/tablet/kylie@2x-708.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px, 50vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/kylie-354.jpg    1x,
+                      ./images/tablet/kylie@2x-708.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px, 50vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/kylie-450.webp    1x,
+                      ./images/mobile/kylie@2x-900.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 480px) 480px, 100vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/kylie-450.jpg    1x,
+                      ./images/mobile/kylie@2x-900.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 480px) 480px, 100vw"
+                    type="image/jpeg"
+                  />
+
+                  <img src="./images/mobile/kylie-450.jpg" alt="Kylie Evans" />
+                </picture>
+              </div>
+              <h3 class="team__name">Kylie Evans</h3>
+              <p class="team__ocupation">Frontend Developer</p>
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="instagram">
+                    <div class="social-thumb">
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#instagram" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="twitter">
+                    <div class="social-thumb">
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#twitter" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="facebook">
+                    <div class="social-thumb">
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#facebook" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="linkedin">
+                    <div class="social-thumb">
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#linkedin" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="team__item">
+              <div class="team__photo">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desc/ryan-270.webp    1x,
+                      ./images/desc/ryan@2x-540.webp 2x
+                    "
+                    media="(min-width: 1140px)"
+                    sizes="(min-width: 1140px) 1140px, 25vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desc/ryan-270.jpg    1x,
+                      ./images/desc/ryan@2x-540.jpg 2x
+                    "
+                    media="(min-width: 1140px)"
+                    sizes="(min-width: 1140px) 1140px, 25vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/ryan-354.webp   1x,
+                      ./images/tablet/ryan@2x708.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px, 50vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/ryan-354.jpg   1x,
+                      ./images/tablet/ryan@2x708.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px, 50vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/ryan-450.webp    1x,
+                      ./images/mobile/ryan@2x-900.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 480px) 480px, 100vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/ryan-450.jpg     1x,
+                      ./iimages/mobile/ryan@2x-900.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 480px) 480px, 100vw"
+                    type="image/jpeg"
+                  />
+
+                  <img src="./images/mobile/ryan-450.jpg" alt="Ryan Harris" />
+                </picture>
+              </div>
+              <h3 class="team__name">Ryan Harris</h3>
+              <p class="team__ocupation">Marketing</p>
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="instagram">
+                    <div class="social-thumb">
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#instagram" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="twitter">
+                    <div class="social-thumb">
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#twitter" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="facebook">
+                    <div class="social-thumb">
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#facebook" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="linkedin">
+                    <div class="social-thumb">
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#linkedin" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="team__item">
+              <div class="team__photo">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desc/tyler-270.webp    1x,
+                      ./images/desc/tyler@2x-540.webp 2x
+                    "
+                    media="(min-width: 1140px)"
+                    sizes="(min-width: 1140px) 1140px, 25vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desc/tyler-270.jpg    1x,
+                      ./images/desc/tyler@2x-540.jpg 2x
+                    "
+                    media="(min-width: 1140px)"
+                    sizes="(min-width: 1140px) 1140px, 25vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/tyler-354.webp    1x,
+                      ./images/tablet/tyler@2x-708.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px, 50vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/tyler-354.jpg    1x,
+                      ./images/tablet/tyler@2x-708.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px, 50vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/tyler-450.webp    1x,
+                      ./images/mobile/tyler@2x-900.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 480px) 480px, 100vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/tyler-450.jpg    1x,
+                      ./images/mobile/tyler@2x-900.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 480px) 480px, 100vw"
+                    type="image/jpeg"
+                  />
+
+                  <img src="./images/mobile/tyler-450.jpg" alt="Tyler Moore" />
+                </picture>
+              </div>
+              <h3 class="team__name">Tyler Moore</h3>
+              <p class="team__ocupation">UI Designer</p>
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="instagram">
+                    <div class="social-thumb">
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#instagram" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="twitter">
+                    <div class="social-thumb">
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#twitter" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="facebook">
+                    <div class="social-thumb">
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#facebook" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#" aria-label="linkedin">
+                    <div class="social-thumb">
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#linkedin" />
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="container customers-section">
         <h2 class="customers-section__title">Regular customers</h2>
