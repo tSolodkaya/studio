@@ -65,7 +65,7 @@ body.modal-open {
   overflow: hidden;
 }
 
-.team__title, .works__title {
+.customers__title, .team__title, .works__title {
   color: #212121;
   text-align: center;
   font-size: 36px;
@@ -75,7 +75,7 @@ body.modal-open {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 1199px) {
-  .team__title, .works__title {
+  .customers__title, .team__title, .works__title {
     font-size: 28px;
     letter-spacing: 0.84px;
     margin-bottom: 30px;
@@ -928,5 +928,68 @@ body.modal-open {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list__link:hover .social-list__icon {
+  fill: #2196f3;
+}
+
+.customers {
+  padding: 60px 15px;
+}
+@media screen and (min-width: 1140px) {
+  .customers {
+    padding: 92px 0;
+  }
+}
+
+.customers-thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  min-width: 210px;
+  min-height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customers-list__link:hover .customers-thumb {
+  border-color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .customers-thumb {
+    min-width: 226px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .customers-thumb {
+    min-width: 170px;
+  }
+}
+
+.customers-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.customers-list__icon {
+  fill: #afb1b8;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customers-list__link:hover .customers-list__icon {
   fill: #2196f3;
 }/*# sourceMappingURL=main.css.map */
