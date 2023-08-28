@@ -1,23 +1,9 @@
 .logo {
-  padding: 16px 0;
+  @extend %logo;
   color: $logo-header-color;
-  font-family: $railway-font;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.72px;
 
   @media screen and (min-width: 768px) {
     margin-right: 93px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 26px;
-    letter-spacing: 0.78px;
-  }
-
-  .logo__accent {
-    color: $accent-color;
   }
 }
 

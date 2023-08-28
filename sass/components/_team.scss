@@ -18,7 +18,7 @@
     max-width: 354px;
   }
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     max-width: 270px;
   }
 
@@ -57,25 +57,4 @@
   letter-spacing: 0.48px;
 
   margin-bottom: 16px;
-}
-
-.social-list {
-  display: flex;
-  column-gap: 10px;
-  justify-content: center;
-  margin-bottom: 24px;
-}
-
-.social-list__item {
-  width: 44px;
-  height: 44px;
-}
-
-.social-list__icon {
-  fill: currentColor;
-  transition: fill 250ms $transition-function;
-
-  .social-list__link:hover & {
-    fill: $accent-color;
-  }
 }
