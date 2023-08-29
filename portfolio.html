@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link class="link" rel="stylesheet" href="./dist/css/main.min.css" />
+  </head>
+  <body>
+    <header class="container header">
+      <div>
+        <a class="logo" href="/index.html"
+          ><span class="logo__accent">Web</span>Studio</a
+        >
+      </div>
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="open or close menu button"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button
+      >
+        <svg width="40" height="40">
+          <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
+          <use class="icon-cross" href="./images/symbol-defs.svg#close"></use>
+        </svg>
+      </button>
+      <div class="menu-container" id="menu-container" data-menu>
+        <nav class="navigation">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="/index.html">Studio</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link menu__link--current" href="/portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="11">
+                <use href="./images/symbol-defs.svg#envelope" />
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a
+              class="contacts__link contacts__link--phone"
+              href="tel:+12127724150"
+            >
+              <svg class="contacts__icon" width="11" height="16">
+                <use href="./images/symbol-defs.svg#smartphone" />
+              </svg>
+              +1 212-772-4150
+            </a>
+          </li>
+        </ul>
+        <div class="socials-container">
+          <ul class="socials">
+            <li class="social__item">
+              <a class="socials__link" href="#">Instagram</a>
+            </li>
+            <li class="social__item">
+              <a class="socials__link" href="#">Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="socials__link" href="#">Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="socials__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="portfolio container">
+        <ul class="options">
+          <li class="options__item">
+            <button class="options__btn options__btn--active" type="button">
+              All
+            </button>
+          </li>
+          <li class="">
+            <button class="options__btn" type="button">Web-sites</button>
+          </li>
+          <li class="">
+            <button class="options__btn" type="button">Apps</button>
+          </li>
+          <li class="">
+            <button class="options__btn" type="button">Design</button>
+          </li>
+          <li class="">
+            <button class="options__btn" type="button">Marketing</button>
+          </li>
+        </ul>
+
+        <h2 class="visually-hidden">Portfolio</h2>
+        <ul class="projects-list">
+          <li class="project">
+            <a class="project__link" href="#">
+              <div class="project__overlay">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desc/tech-370.webp    1x,
+                      ./images/desc/tech@2x-740.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desc/tech-370.jpg    1x,
+                      ./images/desc/tech@2x-740.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33w"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/tech-354.webp    1x,
+                      ./images/tablet/tech@2x-708.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/tech-354.jpg    1x,
+                      ./images/tablet/tech@2x-708.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/tech-450.webp    1x,
+                      ./images/mobile/tech@2x-900.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/tech-450.jpg    1x,
+                      ./images/mobile/tech@2x-900.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/jpeg"
+                  />
+
+                  <img
+                    src="./images/desc/tech-370.jpg"
+                    alt=" The web site of company is opened on laptop"
+                  />
+                </picture>
+
+                <div class="project__description">
+                  <p>
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project__info">
+                <h3 class="project__name">Technoduck</h3>
+                <p class="project__technology">Web-site</p>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a class="project__link" href="#">
+              <div class="project__overlay">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desc/poster-370.webp    1x,
+                      ./images/desc/poster@2x-740.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desc/poster-370.jpg    1x,
+                      ./images/desc/poster@2x-740.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33w"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/poster-354.webp    1x,
+                      ./images/tablet/poster@2x-708.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/poster-354.jpg    1x,
+                      ./images/tablet/poster@2x-708.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/poster-450.webp    1x,
+                      ./images/mobile/poster@2x-900.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/poster-450.jpg    1x,
+                      ./images/mobile/poster@2x-900.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/jpeg"
+                  />
+
+                  <img
+                    src="./images/desc/poster-370.jpg"
+                    alt="  Poster New Orlean vs Golden Star"
+                  />
+                </picture>
+
+                <div class="project__description">
+                  <p>
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project__info">
+                <h3 class="project__name">Poster New Orlean vs Golden Star</h3>
+                <p class="project__technology">Design</p>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a class="project__link" href="#">
+              <div class="project__overlay">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desc/seafood-370.webp    1x,
+                      ./images/desc/seafood@2x-740.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desc/seafood-370.jpg    1x,
+                      ./images/desc/seafood@2x-740.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33w"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/seafood-354.webp    1x,
+                      ./images/tablet/seafood@2x-708.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/seafood-354.jpg    1x,
+                      ./images/tablet/seafood@2x-708.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/seafood-450.webp    1x,
+                      ./images/mobile/seafood@2x-900.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/seafood-450.jpg    1x,
+                      ./images/mobile/seafood@2x-900.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/jpeg"
+                  />
+
+                  <img
+                    src="./images/desc/seafood-370.jpg"
+                    alt=" The fish and description Seafood"
+                  />
+                </picture>
+
+                <div class="project__description">
+                  <p>
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project__info">
+                <h3 class="project__name">Seafood Restaurant</h3>
+                <p class="project__technology">Apps</p>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a class="project__link" href="#">
+              <div class="project__overlay">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desc/prime-370.webp    1x,
+                      ./images/desc/prime@2x-740.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desc/prime-370.jpg    1x,
+                      ./images/desc/prime@2x-740.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33w"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/prime-354.webp    1x,
+                      ./images/tablet/prime@2x-708.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/prime-354.jpg    1x,
+                      ./images/tablet/prime@2x-708.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/prime-450.webp    1x,
+                      ./images/mobile/prime@2x-900.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/prime-450.jpg    1x,
+                      ./images/mobile/prime@2x-900.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/jpeg"
+                  />
+
+                  <img
+                    src="./images/desc/prime-370.jpg"
+                    alt=" Black headphones"
+                  />
+                </picture>
+
+                <div class="project__description">
+                  <p>
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project__info">
+                <h3 class="project__name">Project Prime</h3>
+                <p class="project__technology">Marketing</p>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a class="project__link" href="#">
+              <div class="project__overlay">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desc/boxes-370.webp    1x,
+                      ./images/desc/boxes@2x-740.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desc/boxes-370.jpg    1x,
+                      ./images/desc/boxes@2x-740.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33w"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/boxes-354.webp    1x,
+                      ./images/tablet/boxes@2x-708.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/boxes-354.jpg   1x,
+                      ./images/tablet/book@2x-708.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/boxes-450.webp    1x,
+                      ./images/mobile/boxes@2x-900.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/boxes-450.jpg    1x,
+                      ./images/mobile/boxes@2x-900.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/jpeg"
+                  />
+
+                  <img
+                    src="./images/desc/boxes-370.jpg"
+                    alt="Black and white boxes"
+                  />
+                </picture>
+
+                <div class="project__description">
+                  <p>
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project__info">
+                <h3 class="project__name">Project Boxes</h3>
+                <p class="project__technology">Apps</p>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a class="project__link" href="#">
+              <div class="project__overlay">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desc/Inspirations-370.webp    1x,
+                      ./images/desc/Inspirations@2x-740.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desc/Inspirations-370.jpg    1x,
+                      ./images/desc/Inspirations@2x-740.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33w"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/inspirations-354.webp    1x,
+                      ./images/tablet/inspirations@2x-708.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/inspirations-354.jpg    1x,
+                      ./images/tablet/inspirations@2x-708.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/inspiration-450.webp    1x,
+                      ./images/mobile/inspiration@2x-900.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/inspiration-450.jpg    1x,
+                      ./images/mobile/inspiration@2x-900.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/jpeg"
+                  />
+
+                  <img
+                    src="./images/desc/Inspirations-370.jpg"
+                    alt="A web site with black background is open on screen"
+                  />
+                </picture>
+
+                <div class="project__description">
+                  <p>
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project__info">
+                <h3 class="project__name">Inspiration has no Borders</h3>
+                <p class="project__technology">Web-site</p>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a class="project__link" href="#">
+              <div class="project__overlay">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desc/book-370.webp    1x,
+                      ./images/desc/book@2x-740.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desc/book-370.jpg    1x,
+                      ./images/desc/book@2x-740.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33w"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/book-354.webp    1x,
+                      ./images/tablet/book@2x-708.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/book-354.jpg    1x,
+                      ./images/tablet/book@2x-708.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/book-450.webp    1x,
+                      ./images/mobile/book@2x-900.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/book-450.jpg    1x,
+                      ./images/mobile/book@2x-900.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/jpeg"
+                  />
+
+                  <img
+                    src="./images/desc/book-370.jpg"
+                    alt="The book is opend and there is a girls on the pages"
+                  />
+                </picture>
+
+                <div class="project__description">
+                  <p>
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project__info">
+                <h3 class="project__name">Limited Edition</h3>
+                <p class="project__technology">Design</p>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a class="project__link" href="#">
+              <div class="project__overlay">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desc/lab-370.webp    1x,
+                      ./images/desc/lab@2x-740.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desc/lab-370.jpg    1x,
+                      ./images/desc/lab@2x-740.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33w"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/lab-354.webp    1x,
+                      ./images/tablet/lab@2x-708.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/lab-354.jpg    1x,
+                      ./images/tablet/lab@2x-708.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/lab-450.webp    1x,
+                      ./images/mobile/lab@2x-900.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/lab-450.jpg    1x,
+                      ./images/mobile/lab@2x-900.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/jpeg"
+                  />
+
+                  <img
+                    src="./images/desc/lab-370.jpg"
+                    alt="The white tag for clothes"
+                  />
+                </picture>
+
+                <div class="project__description">
+                  <p>
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project__info">
+                <h3 class="project__name">Project LAB</h3>
+                <p class="project__technology">Marketing</p>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a class="project__link" href="#">
+              <div class="project__overlay">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desc/business-370.webp    1x,
+                      ./images/desc/business@2x-740.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desc/business-370.jpg    1x,
+                      ./images/desc/business@2x-740.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 1200px 33w"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/business-354.webp    1x,
+                      ./images/tablet/business@2x-708.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/business-354.jpg    1x,
+                      ./images/tablet/business@2x-708.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 768px 50vw"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/business-450.webp    1x,
+                      ./images/mobile/business@2x-900.webp 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/business-450.jpg    1x,
+                      ./images/mobile/business@2x-900.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes="(max-width: 768px) 480px 100vw"
+                    type="image/jpeg"
+                  />
+
+                  <img
+                    src="./images/desc/business-370.jpg"
+                    alt="The person look at the Growing business site"
+                  />
+                </picture>
+
+                <div class="project__description">
+                  <p>
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project__info">
+                <h3 class="project__name">Growing Business</h3>
+                <p class="project__technology">Apps</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="studio-footer">
+      <div class="container desc-wrap">
+        <div class="tablet-wrap">
+          <div class="contacts-wrap">
+            <a class="logo studio-footer__logo" href="/index.html"
+              ><span class="logo__accent">Web</span>Studio</a
+            >
+            <address>
+              <p class="studio-footer__adress">695 Park Ave, NY 10065, USA</p>
+            </address>
+            <a class="studio-footer__post" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <a class="studio-footer-contacts" href="tel:+12127724150"
+              >+1 212-772-4150
+            </a>
+          </div>
+          <div class="studio-footer__socials">
+            <h3 class="studio-footer__header">Find us on</h3>
+
+            <ul class="social-list">
+              <li class="social-list__item social-list__item--background">
+                <a class="social-list__link" href="#" aria-label="instagram">
+                  <svg
+                    class="social-list__icon social-list__icon--light"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/symbol-defs.svg#instagram" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item social-list__item--background">
+                <a class="social-list__link" href="#" aria-label="twitter">
+                  <svg
+                    class="social-list__icon social-list__icon--light"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/symbol-defs.svg#twitter" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item social-list__item--background">
+                <a class="social-list__link" href="#" aria-label="facebook">
+                  <svg
+                    class="social-list__icon social-list__icon--light"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/symbol-defs.svg#facebook" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item social-list__item--background">
+                <a class="social-list__link" href="#" aria-label="linkedin">
+                  <svg
+                    class="social-list__icon social-list__icon--light"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/symbol-defs.svg#linkedin" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="subscribe-form">
+          <label class="studio-footer__header studio-footer__header--margin"
+            >Subscribe to the newsletter
+            <br />
+            <input
+              class="subscribe-form__input"
+              type="email"
+              name="subscribe"
+              placeholder="E-mail"
+          /></label>
+          <button class="subscribe-form__btn" type="submit">
+            Subscribe
+            <svg class="send-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-send" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+    <script src="./javascript/menu.js"></script>
+  </body>
+</html>

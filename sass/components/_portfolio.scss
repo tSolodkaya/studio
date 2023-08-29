@@ -1,0 +1,113 @@
+.portfolio {
+  padding: 60px 15px;
+}
+
+.projects-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+.options__btn {
+  @extend %button;
+
+  padding: 6px 22px;
+  background-color: $bg-section-color;
+  border: 1px solid transparent;
+
+  color: $second-text-color;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.48px;
+
+  transition: background-color 250ms $transition-function,
+    color 250ms $transition-function;
+
+  &:hover,
+  &:focus,
+  &--active {
+    background-color: $accent-color;
+    color: $white-text-color;
+  }
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.project {
+  max-width: 450px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+  }
+  border: 1px solid $portfolio-card-border;
+
+  &:hover {
+    box-shadow: $portfolio-card-box-shadow;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.project__description {
+  position: absolute;
+  bottom: -100%;
+  height: 100%;
+  background-color: $card-overlay-color;
+  transform: translateY(0);
+
+  color: $white-text-color;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.54px;
+  padding: 77px 24px 24px 24px;
+
+  transition: transform 250ms $transition-function;
+}
+
+.project__overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.project__link:hover .project__description {
+  transform: translateY(-100%);
+}
+
+.project__info {
+  padding: 20px 24px 20px 24px;
+}
+
+.project__name {
+  color: $second-text-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.08px;
+}
+
+.project__technology {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+  letter-spacing: 0.48px;
+}

@@ -1,0 +1,74 @@
+<header class="container header">
+  <div>
+    <a class="logo" href="/index.html"
+      ><span class="logo__accent">Web</span>Studio</a
+    >
+  </div>
+  <button
+    class="menu-button"
+    type="button"
+    aria-label="open or close menu button"
+    aria-expanded="false"
+    aria-controls="menu-container"
+    data-menu-button
+  >
+    <svg width="40" height="40">
+      <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
+      <use class="icon-cross" href="./images/symbol-defs.svg#close"></use>
+    </svg>
+  </button>
+  <div class="menu-container" id="menu-container" data-menu>
+    <nav class="navigation">
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link menu__link--current" href="/index.html"
+            >Studio</a
+          >
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="/portfolio.html">Portfolio</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="contacts">
+      <li class="contacts__item">
+        <a class="contacts__link" href="mailto:info@devstudio.com">
+          <svg class="contacts__icon" width="16" height="11">
+            <use href="./images/symbol-defs.svg#envelope" />
+          </svg>
+          info@devstudio.com</a
+        >
+      </li>
+      <li class="contacts__item">
+        <a class="contacts__link contacts__link--phone" href="tel:+12127724150">
+          <svg class="contacts__icon" width="11" height="16">
+            <use href="./images/symbol-defs.svg#smartphone" />
+          </svg>
+          +1 212-772-4150
+        </a>
+      </li>
+    </ul>
+    <div class="socials-container">
+      <ul class="socials">
+        <li class="social__item">
+          <a class="socials__link" href="#">Instagram</a>
+        </li>
+        <li class="social__item">
+          <a class="socials__link" href="#">Twitter</a>
+        </li>
+        <li class="social__item">
+          <a class="socials__link" href="#">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="socials__link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
