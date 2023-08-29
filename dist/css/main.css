@@ -568,8 +568,6 @@ body.modal-open {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 10px;
-  margin-top: 5px;
   padding-left: 40px;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -585,7 +583,13 @@ body.modal-open {
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.info-form__label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
 .info-form__area::-webkit-input-placeholder {
+  color: #757575;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
@@ -594,6 +598,7 @@ body.modal-open {
 }
 
 .info-form__area::-moz-placeholder {
+  color: #757575;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
@@ -602,6 +607,7 @@ body.modal-open {
 }
 
 .info-form__area:-ms-input-placeholder {
+  color: #757575;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
@@ -610,6 +616,7 @@ body.modal-open {
 }
 
 .info-form__area::-ms-input-placeholder {
+  color: #757575;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
@@ -621,6 +628,7 @@ body.modal-open {
 .info-form__input,
 .info-form__area::placeholder,
 .info-form__area {
+  color: #757575;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
@@ -628,17 +636,18 @@ body.modal-open {
   letter-spacing: 0.12px;
 }
 
-.info-form__label:focus-within .info-form__icon {
+.info-form__input:focus-within + .info-form__icon {
   fill: #2196f3;
 }
 
-.info-form__label:focus-within .info-form__label {
+.info-form__input:focus-within .info-form__label {
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.form-thumb {
+.info-form__thumb {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .info-form__icon {

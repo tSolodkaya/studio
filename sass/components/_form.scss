@@ -15,8 +15,7 @@
   height: 40px;
   border: 1px solid $input-border;
   border-radius: $border-radius;
-  margin-bottom: 10px;
-  margin-top: 5px;
+
   padding-left: 40px;
   transition: box-shadow 250ms $transition-function,
     border-color 250ms $transition-function;
@@ -29,10 +28,16 @@
   box-shadow: 0 4px 4px $input-focus-shadow;
 }
 
+.info-form__label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
 .info-form__label,
 .info-form__input,
 .info-form__area::placeholder,
 .info-form__area {
+  color: $primary-text-color;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
@@ -40,16 +45,17 @@
   letter-spacing: 0.12px;
 }
 
-.info-form__label:focus-within .info-form__icon {
+.info-form__input:focus-within + .info-form__icon {
   fill: $accent-color;
 }
 
-.info-form__label:focus-within .info-form__label {
+.info-form__input:focus-within .info-form__label {
   box-shadow: 0 4px 4px $input-focus-shadow;
 }
 
-.form-thumb {
+.info-form__thumb {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .info-form__icon {
