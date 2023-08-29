@@ -154,6 +154,7 @@ body.modal-open {
   .menu-container {
     display: none;
     position: absolute;
+    z-index: 2;
     top: 100%;
     left: 0;
     width: 100%;
@@ -210,14 +211,14 @@ body.modal-open {
 .menu__link:hover {
   color: #2196f3;
 }
+.menu__link--current {
+  color: #2196f3;
+}
 @media screen and (min-width: 768px) {
   .menu__link {
     font-size: 14px;
     letter-spacing: 0.28px;
     padding: 32px 0;
-  }
-  .menu__link--current {
-    color: #2196f3;
   }
   .menu__link--current::after {
     content: "";
@@ -270,6 +271,12 @@ body.modal-open {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .contacts__item--margin {
+    margin-bottom: 32px;
+  }
+}
+
 .contacts__icon {
   display: none;
   fill: currentColor;
@@ -298,7 +305,6 @@ body.modal-open {
     color: #2196f3;
     font-size: 34px;
     letter-spacing: 0.68px;
-    margin-bottom: 32px;
   }
 }
 .contacts__link--phone:hover .contacts__icon {

@@ -18,6 +18,7 @@
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
+    z-index: 2;
     top: 100%;
     left: 0;
     width: 100%;
@@ -64,14 +65,14 @@
     color: $accent-color;
   }
 
+  &--current {
+    color: $accent-color;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 14px;
     letter-spacing: 0.28px;
     padding: 32px 0;
-
-    &--current {
-      color: $accent-color;
-    }
 
     &--current::after {
       content: "";
@@ -118,6 +119,12 @@
   }
 }
 
+.contacts__item--margin {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+}
+
 .contacts__icon {
   display: none;
   fill: currentColor;
@@ -143,7 +150,6 @@
       color: $accent-color;
       font-size: 34px;
       letter-spacing: 0.68px;
-      margin-bottom: 32px;
     }
 
     &:hover .contacts__icon {
